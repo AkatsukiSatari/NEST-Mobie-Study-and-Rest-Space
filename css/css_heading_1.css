@@ -19,6 +19,13 @@
    color: #2D5A3F;
 }
 
+#phone {
+   cursor: default;
+   font-size: 16px;
+   font-weight: 600;
+   color: rgb(81, 79, 79);
+}
+
 #chon_ngon_ngu {
    cursor: pointer;
    padding-left: 150px;
