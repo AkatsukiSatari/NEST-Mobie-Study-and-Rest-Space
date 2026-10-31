@@ -1,0 +1,82 @@
+#final_HUB {
+   border: black solid;
+   margin-top: 70px;
+   background-color: #E8DEC9;
+   display: flex;
+   height: 248px;
+   justify-content: flex-start;
+   gap: 60px;
+}  
+
+.logo_in_final_HUB {
+   border: 1px solid #000;
+   margin-top: 45px;
+   margin-left: 120px;
+   margin-right: 80px;
+   width: 165px;
+   height: 165px;
+}
+
+.text_final_HUB {
+   margin-top: 70px;
+   font-family: sans-serif;
+   font-size: 19px;
+   font-weight: bold;
+   color: #2D5A3F;
+}
+
+.text_con_final_HUB {
+   cursor: pointer;
+   margin-top: 10px;
+   font-size: 15px;
+   font-weight: lighter;
+   color: #132d1d;
+}
+/* Khung chứa tổng */
+.follow_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 70px;
+}
+
+.follow_title {
+  color:#2D5A3F ;
+  font-size: 19px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+/* Hàng chứa các icon */
+.social_icons {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* Khoảng cách giữa các icon */
+}
+
+/* Từng nút icon */
+.social_item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  /* Thuộc tính tạo độ mượt khi di chuyển */
+  transition: transform 0.25s ease;
+}
+
+.social_item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* =======================================
+   HIỆU ỨNG DI CHUỘT: NHẤC LÊN 1 ĐOẠN NGẮN
+   ======================================= */
+.social_item:hover {
+  transform: translateY(-6px); /* Nhấc lên 6px */
+}

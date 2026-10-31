@@ -1,0 +1,43 @@
+.img_in_heading_3 {
+   height: 380px;
+   width: 350px;
+   border-radius: 20px;
+}
+#heading_3 {
+   margin-top: 35px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.img_in_heading_3_box {
+  cursor: pointer;
+  width: 350px;
+  height: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.img_in_heading_3_box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+  display: block;
+}
+
+.img_in_heading_3_box:hover img {
+  transform: scale(1.1);
+}
+#noi_dung_in_heading_3 {
+  cursor: pointer;
+  display: flex;
+  color: #2B2D2F;
+  font-family: sans-serif;
+  font-weight: 550;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.noi_dung_heading_3_chi_tiet:hover {
+  color: #2D5A3F;
+}

@@ -1,0 +1,52 @@
+#heading_1 {
+  position: relative;
+}
+
+.menu_dropdown_wrapper {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.mega_menu {
+  position: absolute;
+  top: 100%;               
+  left: 0;
+  width: 100%;               
+  background-color: #723f1f;
+  display: flex;
+  justify-content: flex-start;
+  gap: 60px;
+  padding: 24px 60px 30px;
+  box-sizing: border-box;
+  z-index: 999;            
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.mega_column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mega_column h4 {
+  color: #e5a65e;
+  font-size: 15px;
+  margin: 0 0 6px 0;
+}
+
+.mega_column a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.mega_column a:hover {
+  color: #e5a65e;
+}
+
+.menu_dropdown_wrapper:hover .mega_menu {
+  opacity: 1;
+  visibility: visible;
+}

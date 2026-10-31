@@ -1,0 +1,29 @@
+@import url(css_heading_1.css);
+@import url(css_heading_2.css);
+@import url(css_heading_3.css);
+@import url(css_heading_4.css);
+@import url(css_heading_5.css);
+@import url(css_final_HUB.css);
+@import url(css_logo.css);
+@import url(css_slider_container.css);
+@import url(css_dropdown_thuc_don.css);
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

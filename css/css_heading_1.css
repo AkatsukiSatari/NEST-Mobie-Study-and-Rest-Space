@@ -1,0 +1,38 @@
+#heading_1 {
+   padding-left: 100px;
+   height: 140 px;
+   display: flex;
+   gap: 70px;
+   align-items: center;
+   justify-content: flex-start;
+   font-weight: bold;
+   font-family: sans-serif;
+   font-size: 20px;
+   background-color: #e7e7e3;
+}
+
+.text_in_heading_1 {
+   cursor: pointer;
+   color: #2B2D2F;
+}
+.text_in_heading_1:hover   {
+   color: #2D5A3F;
+}
+
+#chon_ngon_ngu {
+   cursor: pointer;
+   padding-left: 150px;
+   display: flex;          
+   gap: 5px;           
+   align-items: center;   
+   justify-content: flex-start;
+}
+
+#chon_ngon_ngu_vietnam {
+   width: 30px;
+   height: 25px;
+}
+#chon_ngon_ngu_england {
+   width: 30px;
+   height: 25px;
+}
