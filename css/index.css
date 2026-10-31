@@ -27,3 +27,76 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* ============================================================
+   RESPONSIVE CHO ĐIỆN THOẠI (Màn hình rộng tối đa 768px)
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* 1. Reset các khối bọc để không bị tràn ngang */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* 2. Banner giới thiệu App */
+  .slider-container, 
+  [id^="heading_"] {
+    flex-direction: column !important; /* Đổi hết từ hàng ngang sang hàng dọc */
+    width: 100% !important;
+    padding: 10px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 3. SỬA LỖI CHỮ BỊ RỚT DÒNG TỪNG TỪ */
+  /* Chỉnh lại khối "Đồng hành cùng NEST" và 3 cột chữ bên dưới */
+  #heading_3,
+  #noi_dung_in_heading_3,
+  .card_title_in_heading_4 {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+  }
+
+  /* Đảm bảo khung chữ có độ rộng thoải mái để không ép từng chữ xuống dòng */
+  #noi_dung_in_heading_3 div,
+  #noi_dung_in_heading_3 p {
+    width: auto !important;
+    min-width: 90px !important;
+    white-space: normal !important;
+    word-spacing: normal !important; /* Trả về khoảng cách từ mặc định */
+    letter-spacing: normal !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+  }
+
+  /* 4. SỬA CÁC CARD SẢN PHẨM (NƯỚC UỐNG THƯỞNG VỊ) */
+  /* Trên điện thoại, cho 2 card xếp chồng theo chiều dọc thay vì ép nằm ngang */
+  .heading_4 {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+  }
+
+  .card_item_in_heading_4 {
+    width: 90% !important; /* Card chiếm 90% chiều rộng màn hình điện thoại */
+    max-width: 360px !important;
+    margin: 0 auto !important;
+  }
+
+  .img_box_in_heading_4 {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .img_box_in_heading_4 img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover !important;
+  }
+
+  .card_title_in_heading_4 {
+    width: 100% !important;
+    padding: 12px 0 !important;
+  }
+}
